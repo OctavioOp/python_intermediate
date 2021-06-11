@@ -46,9 +46,10 @@ objetos = [
 #Ordenar por estatura //sort
 #filtrar solo mayores 180 cm height //filter
 
-valorMap = map((lambda x : (x['name'] , x['eye_color'])), objetos)
+valorMap = map((lambda x : ('name: ' + x['name'] ,'color eyes: ' + x['eye_color'])), objetos)
 valorMap = [valorMap for valorMap in valorMap]
 print(valorMap)
+
 
 valores =  filter((lambda x: int(x['height']) >= 180), objetos)
 valores = [valores for valores in valores]
