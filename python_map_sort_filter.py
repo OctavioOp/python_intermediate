@@ -46,7 +46,7 @@ objetos = [
 #Ordenar por estatura //sort
 #filtrar solo mayores 180 cm height //filter
 
-valorMap = map((lambda x : (x['name'], x['eye_color'])), objetos)
+valorMap = map((lambda x : (x['name'] , x['eye_color'])), objetos)
 valorMap = [valorMap for valorMap in valorMap]
 print(valorMap)
 
